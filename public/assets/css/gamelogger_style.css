@@ -87,3 +87,17 @@ label {
   cursor: pointer;
   transform: scale(1.1);
 }
+
+.swal2-show {
+  background: rgb(89, 103, 147) !important;
+}
+
+.swal2-popup .swal2-title,
+.swal2-popup #swal2-content {
+  color: white !important;
+}
+
+.swal2-popup .swal2-styled.swal2-confirm {
+  background: white !important;
+  color: rgb(89, 103, 147) !important;
+}

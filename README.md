@@ -1,25 +1,29 @@
-# Console-Log
+# Gamelogger w/ Handlebars.js & ORM
 
-# Node Express Handlebars
+Gamelogger is another server-based application deployed within Heroku that utitlizes Node.js, Express,js, Handlebars.js, MySQL, and ORM. I was inspired by my friend Nick who tracks his game progressions to make Gamelogger come to life, and possibly to be used by him lol.
 
-### Overview
+### Link to Project
 
-In this assignment, you'll create a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). Be sure to follow the MVC design pattern; use Node and MySQL to query and route data in your app, and Handlebars to generate your HTML.
+https://drive.google.com/file/d/16crBaWk0JJAPKEivHyemGOuLKGlsL2eW/view?usp=sharing
 
-### Before You Begin
+### Skills Learned
 
-- Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.
+I learned many things while doing this project with the support of my wife
+who is also a very talented programmer and Stack Overflow. Here are some things
+I learned and integrated into this project:
 
-- Whenever a user submits a burger's name, your app will display the burger on the left side of the page -- waiting to be devoured.
+- handlebars.js
+- Object-relation Mapping _(manually created)_
+- express-handlebars (npm package)
+- **"PUT"** method
 
-- Each burger in the waiting area also has a `Devour it!` button. When the user clicks it, the burger will move to the right side of the page.
+**Also, feel free to refer to the contents within the repository to see how I:**
 
-- Your app will store every burger in a database, whether devoured or not.
+- seperated the responsibilities of each folder using the MVC design pattern
+- utilized callback functions
 
-- [Check out this video of the app for a run-through of how it works](https://youtu.be/msvdn95x9OM).
+### Comments
 
-#### View setup
+I found this project to be very difficult. Luckily, a programmer realized this and made sequelize.js because this required alot of thinking. Thankfully, I feel like I now have a very strong grasp on callback functions and utilizing them in future projects.
 
-     - Setup the `index.handlebars` to have the template that Handlebars can render onto.
-
-     - Create a button in `index.handlebars` that will submit the user input into the database.
+_created by David M. Padilla_

@@ -1,8 +1,7 @@
+$("#gamingPlatform").val("");
+
 $("#submit").on("click", function(event) {
   event.preventDefault();
-
-  console.log($("#gamingPlatform").val());
-
   var newVideogame = {
     console: $("#gamingPlatform").val(),
     title: $("#videogame")
@@ -11,12 +10,25 @@ $("#submit").on("click", function(event) {
       .toString()
   };
 
-  $.ajax("/api/new", {
-    method: "POST",
-    data: newVideogame
-  }).then(function() {
-    location.reload();
-  });
+  if (
+    $("#videogame")
+      .val()
+      .trim() !== "" &&
+    $("#gamingPlatform").val() !== null
+  ) {
+    $.ajax("/api/new", {
+      method: "POST",
+      data: newVideogame
+    }).then(function() {
+      location.reload();
+    });
+  } else {
+    Swal.fire({
+      type: "error",
+      title: "Oops...",
+      text: "Please fill in all the required fields."
+    });
+  }
 });
 
 $(".transfer").on("click", function(event) {
