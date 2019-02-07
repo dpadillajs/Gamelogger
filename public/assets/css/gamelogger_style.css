@@ -77,3 +77,13 @@ label {
 .completed {
   color: rgb(3, 138, 176);
 }
+
+.circle:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.fa-times-circle:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}

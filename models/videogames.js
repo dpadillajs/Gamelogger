@@ -1,9 +1,29 @@
 var orm = require("../config/orm");
 
-module.exports = function() {
-  orm.selectAll("example_One", "example_Two", "exammple_Three");
+var videogames = {
+  selectAll: function(cb) {
+    orm.selectAll("videogames", res => {
+      cb(res);
+    });
+  },
 
-  orm.insertOne("example_One", "example_Two", "exammple_Three");
+  insertOne: function(colOne, colTwo, valOne, valTwo, cb) {
+    orm.insertOne("videogames", colOne, colTwo, valOne, valTwo, res => {
+      cb(res);
+    });
+  },
 
-  orm.updateOne("example_One", "example_Two", "exammple_Three");
+  updateOne: function(colOne, valOne, colTwo, valTwo, cb) {
+    orm.updateOne("videogames", colOne, valOne, colTwo, valTwo, res => {
+      cb(res);
+    });
+  },
+
+  delete: function(column, value, cb) {
+    orm.delete("videogames", column, value, res => {
+      cb(res);
+    });
+  }
 };
+
+module.exports = videogames;
