@@ -1,0 +1,79 @@
+body {
+  background: rgb(35, 35, 35);
+}
+
+.fa-size {
+  font-size: 25px;
+}
+
+.list-group-item {
+  color: white;
+  border: 1px solid white;
+}
+
+.jumbotron {
+  background: url(../img/gamelogger-bg.jpg);
+  background-size: cover;
+}
+
+.display-4 {
+  font-family: "Audiowide", cursive;
+  color: white;
+}
+
+@media (min-width: 576px) {
+  .jumbotron {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .completed-games {
+    margin-top: 30px;
+  }
+}
+
+.completed-item {
+  background: rgb(3, 138, 176) !important;
+}
+
+.in-progress-item {
+  background: rgb(211, 83, 137);
+}
+
+label {
+  color: white;
+}
+
+#sticky-container {
+  min-height: calc(100vh - 110px);
+}
+
+#sticky-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  margin-top: 30px;
+  background: url(../img/gamelogger-bg.jpg);
+  background-size: cover;
+  color: white;
+  font-size: 20px;
+  filter: grayscale() brightness(0.25);
+}
+
+#footer-text {
+  margin: 0;
+}
+
+.card-header {
+  font-family: "Audiowide", cursive;
+}
+
+.games-in-progress {
+  color: rgb(211, 83, 137);
+}
+
+.completed {
+  color: rgb(3, 138, 176);
+}

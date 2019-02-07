@@ -1,0 +1,99 @@
+<div id="sticky-container">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4 text-center">gamelogger</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-header games-in-progress">
+                        games in progress
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        {{!-- {{#each objName}}
+                        <li class="list-group-item in-progress-item d-flex justify-content-between">
+                            <i class="fab {{console}} fa-size"></i>
+                            {{title}}
+                            <i class="fas fa-trash-alt fa-size"></i>
+                        </li>
+                        {{/each}} --}}
+                        <li class="list-group-item in-progress-item d-flex justify-content-between">
+                            <i class="fab fa-nintendo-switch fa-size"></i>
+                            Cras justo odio
+                            <i class="fas fa-trash-alt fa-size"></i>
+                        </li>
+
+                        <li class="list-group-item in-progress-item d-flex justify-content-between">
+                            <i class="fab fa-playstation fa-size"></i>
+                            Cras justo odio
+                            <i class="fas fa-trash-alt fa-size"></i>
+                        </li>
+
+                        <li class="list-group-item in-progress-item d-flex justify-content-between">
+                            <i class="fab fa-xbox fa-size"></i>
+                            Cras justo odio
+                            <i class="fas fa-trash-alt fa-size"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6 completed-games">
+                <div class="card">
+                    <div class="card-header completed">
+                        completed
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item completed-item d-flex justify-content-between">
+                            <i class="fab fa-nintendo-switch fa-size"></i>
+                            <span style="text-decoration: line-through">Cras justo odio</span>
+                            <i class="fas fa-trash-alt fa-size" style="visibility: hidden"></i>
+                        </li>
+
+                        <li class="list-group-item completed-item d-flex justify-content-between">
+                            <i class="fab fa-playstation fa-size"></i>
+                            <span style="text-decoration: line-through">Cras justo odio</span>
+                            <i class="fas fa-trash-alt fa-size" style="visibility: hidden"></i>
+                        </li>
+
+                        <li class="list-group-item completed-item d-flex justify-content-between">
+                            <i class="fab fa-xbox fa-size"></i>
+                            <span style="text-decoration: line-through">Cras justo odio</span>
+                            <i class="fas fa-trash-alt fa-size" style="visibility: hidden"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <form>
+            <div class="row my-3">
+                <div class="col">
+                    <label for="exampleFormControlSelect1" class="my-2">Console:</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Nintendo Switch</i></option>
+                        <option>Playstation 4</option>
+                        <option>Xbox One</option>
+                    </select>
+                    <small id="videogameTip" class="form-text text-muted">(ex. Nintendo Switch, Playstation 4,
+                        etc.)</small>
+                </div>
+                <div class="col">
+                    <label for="videogame" class="my-2">Videogame:</label>
+                    <input type="text" class="form-control" id="videogame" placeholder="Videogame Here">
+                    <small id="videogameTip" class="form-text text-muted">Your videogame will be saved to the progress
+                        section.</small>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+
+<div id="sticky-footer">
+    <div>
+        <p id="footer-text">&copy; Copyright 2018 - gamelogger, LLC.</p>
+    </div>
+</div>
