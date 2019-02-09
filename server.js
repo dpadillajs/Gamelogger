@@ -14,7 +14,6 @@ var exphbs = require("express-handlebars");
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-// Imports routes to give the server access to them.
 var routes = require("./controllers/videogames_controller");
 
 app.use(routes);

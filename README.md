@@ -1,10 +1,10 @@
 # Gamelogger w/ Handlebars.js & ORM
 
-Gamelogger is another server-based application deployed within Heroku that utitlizes Node.js, Express,js, Handlebars.js, MySQL, and ORM. I was inspired by my friend Nick who tracks his videogame progressions to make Gamelogger a reality, and possibly to be used by him lol.
+Gamelogger is another server-based application deployed within Heroku that utitlizes Node.js, Express,js, Handlebars.js, MySQL, and ORM. I was inspired by my friend Nick who tracks his videogame progressions to make Gamelogger a reality.
 
 ### Link to Project
 
-https://drive.google.com/file/d/16crBaWk0JJAPKEivHyemGOuLKGlsL2eW/view?usp=sharing
+https://gamelogger-app.herokuapp.com/
 
 ### Skills Learned
 
@@ -19,7 +19,7 @@ I learned and integrated into this project:
 
 **Also, feel free to refer to the contents within my repository to see how I:**
 
-- seperated the responsibilities of each folder using the MVC design pattern
+- seperated the responsibilities within each folder using the MVC design model
 - utilized callback functions
 
 ### Comments
